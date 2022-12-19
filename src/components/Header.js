@@ -1,5 +1,10 @@
+import { useNavigate } from 'react-router-dom'
 
 function Header () {
+  const navigate = useNavigate()
+  const click = () => {
+    navigate('/univer')
+  }
   return (
       <header className="d-flex justify-between align-center p-40">
         <a href='/'>
@@ -11,7 +16,7 @@ function Header () {
               </div>
             </div>
         </a>
-        <div><a href='/univer'> О нашем Университете</a></div>
+        <div><a onClick={click}> О нашем Университете</a></div>
       </header>
   )
 }
