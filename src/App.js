@@ -5,13 +5,13 @@ import MainPage from './pages/MainPage'
 
 function App () {
   return (
-            <div className="App">
-                <Routes>
-                    <Route path="/univer" element={<Univer/>}/>
-                    <Route path="/" element={<MainPage/>}/>
-                    <Route path="*" element={<h>Not found</h>} />
-                </Routes>
-            </div>
+    <div className="App">
+      <Routes>
+        <Route path="/univer" element={<Univer />} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="*" element={<h>Not found</h>} />
+      </Routes>
+    </div>
   )
 }
 
